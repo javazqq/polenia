@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Products.css';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -25,20 +26,23 @@ const Products = () => {
   }
 
   return (
-    <div>
-      <h1>Products</h1>
-      <ul>
+    <div className="products-container">
+      <h1 className="products-title">Products</h1>
+      <div className="product-grid">
         {products.map((product) => (
-          <li key={product.id}>
+          <div key={product.id} className="product-card">
+            <a href={`/products/${product.id}`}>
             <h2>{product.name}</h2>
+            </a>
             <p>{product.description}</p>
-            <p>${product.price}</p>
-            <p>{product.stock}</p>
-          </li>
+            <p className="price">${product.price}</p>
+            <p className="stock">In stock: {product.stock}</p>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
+  
 };
 
 export default Products;

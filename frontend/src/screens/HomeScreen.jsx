@@ -1,5 +1,6 @@
 import React from 'react';
-import Products from '../components/Products'; // Import your Products component
+import './HomeScreen.css';
+import Products from '../components/Products';
 
 const HomeScreen = () => {
   return (
@@ -12,5 +13,6 @@ const HomeScreen = () => {
     </div>
   );
 };
+
 
 export default HomeScreen;
