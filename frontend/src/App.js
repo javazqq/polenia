@@ -1,13 +1,16 @@
 import React from "react";
-import HomeScreen from "./screens/HomeScreen";
+import { Container } from "react-bootstrap";
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
     <>
+    <NavBar />
       <main>
-        <div>
-          <HomeScreen />
-        </div>
+        <Container>
+          <Outlet />
+        </Container>
       </main>
     </>
   );

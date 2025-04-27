@@ -1,0 +1,44 @@
+.product-screen {
+    padding: 2rem;
+  }
+  
+  .product-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .product-details {
+    max-width: 500px;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .in-stock {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .out-of-stock {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
